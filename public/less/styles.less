@@ -1,0 +1,317 @@
+/***************************
+****************************
+Variables
+****************************
+***************************/
+
+@orange-1: #f26522;
+@orange-2: #d7591d;
+
+/***************************
+****************************
+Fonts
+****************************
+***************************/
+
+@font-face {
+  font-family: 'proxima_novasemibold';
+  src: url('../fonts/proximanova-sbold-webfont.eot');
+  src: url('../fonts/proximanova-sbold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/proximanova-sbold-webfont.woff2') format('woff2'),
+  url('../fonts/proximanova-sbold-webfont.woff') format('woff'),
+  url('../fonts/proximanova-sbold-webfont.ttf') format('truetype'),
+  url('../fonts/proximanova-sbold-webfont.svg#proxima_novasemibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'proxima_nova_rgbold';
+  src: url('../fonts/proximanova-bold-webfont.eot');
+  src: url('../fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/proximanova-bold-webfont.woff2') format('woff2'),
+  url('../fonts/proximanova-bold-webfont.woff') format('woff'),
+  url('../fonts/proximanova-bold-webfont.ttf') format('truetype'),
+  url('../fonts/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/***************************
+****************************
+Animations
+****************************
+***************************/
+
+@-moz-keyframes bounce {
+  0% {-moz-transform: translateY(0);transform: translateY(0);}
+  20% {-moz-transform: translateY(0); transform: translateY(0);}
+  40% {-moz-transform: translateY(-30px);transform: translateY(-30px); }
+  50% {-moz-transform: translateY(0);transform: translateY(0); }
+  60% { -moz-transform: translateY(-15px); transform: translateY(-15px); }
+  80% { -moz-transform: translateY(0); transform: translateY(0); }
+  100% {-moz-transform: translateY(0); transform: translateY(0); } 
+}
+
+@-webkit-keyframes bounce {
+  0% {-webkit-transform: translateY(0);transform: translateY(0); }
+  20% {-webkit-transform: translateY(0);transform: translateY(0); }
+  40% {-webkit-transform: translateY(-30px); transform: translateY(-30px); }
+  50% {-webkit-transform: translateY(0); transform: translateY(0); }
+  60% { -webkit-transform: translateY(-15px); transform: translateY(-15px); }
+  80% {-webkit-transform: translateY(0); transform: translateY(0); }
+  100% { -webkit-transform: translateY(0);transform: translateY(0); } 
+}
+
+@-o-keyframes bounce {
+  0% { -o-transform: translateY(0);transform: translateY(0); }
+  20% {-o-transform: translateY(0);transform: translateY(0); }
+  40% {-o-transform: translateY(-30px);transform: translateY(-30px); }
+  50% {-o-transform: translateY(0);transform: translateY(0); }
+  60% {-o-transform: translateY(-15px);transform: translateY(-15px); }
+  80% {-o-transform: translateY(0);transform: translateY(0); }
+  100% {-o-transform: translateY(0);transform: translateY(0); } 
+}
+
+@-ms-keyframes bounce {
+  0% {-ms-transform: translateY(0);transform: translateY(0); }
+  20% {-ms-transform: translateY(0);transform: translateY(0); }
+  40% {-ms-transform: translateY(-30px);transform: translateY(-30px); }
+  50% {-ms-transform: translateY(0);transform: translateY(0); }
+  60% {-ms-transform: translateY(-15px);transform: translateY(-15px); }
+  80% {-ms-transform: translateY(0);transform: translateY(0); }
+  100% {-ms-transform: translateY(0);transform: translateY(0); } 
+}
+
+@keyframes bounce {
+  0% {transform: translateY(0); }
+  20% {transform: translateY(0); }
+  40% {transform: translateY(-30px); }
+  50% {transform: translateY(0); }
+  60% {transform: translateY(-15px); }
+  80% {transform: translateY(0); }
+  100% {transform: translateY(0); } 
+}
+
+.animated {
+  -webkit-animation: 1s ease both;
+  -moz-animation: 1s ease both;
+  -ms-animation: 1s ease both;
+  -o-animation: 1s ease both;
+  animation: 1s ease both; 
+}
+
+.bounce {
+  -webkit-animation-name: bounce;
+  -moz-animation-name: bounce;
+  -ms-animation-name: bounce;
+  -o-animation-name: bounce;
+  animation-name: bounce; 
+}
+
+/***************************
+****************************
+General Styles
+****************************
+***************************/
+
+a {
+  color: white;
+  
+  &:hover {
+    color: white;
+  }
+}
+
+a, input {
+  &:focus {outline:none;}
+  &::-moz-focus-inner {border:0;}
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+.my-btn {
+  font-family: proxima_novasemibold;
+  border-radius: 25px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+
+  &.btn-1 {
+    background-color: white;
+    color: @orange-1;
+
+    &:hover {
+      color: @orange-2;
+    }
+  }
+}
+
+.down-arrow {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+  width: 65px;
+  height: 65px;
+  display: block;
+  text-align: center;
+  line-height: 65px;
+  color: #FFF;
+  font-size: 25px;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.play-btn {
+  background: url("../images/video.png") no-repeat scroll 0px 0px transparent;
+  height: 146px;
+  width: 146px;
+  display: block;
+  text-indent: -9999px;
+}
+
+.border {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;;
+  
+  &.black {
+    border-bottom-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+/***************************
+****************************
+Header Styles
+****************************
+***************************/
+
+.logo {
+  margin: 0;
+
+  a {
+    background: url("../images/logo.png") no-repeat 0 0;
+    text-indent: -9999px;
+    display: block;
+    height: 38px;
+    width: 186px;
+  }
+}
+
+#menu {
+  ul {
+    margin: 0;
+    
+    li {
+      float: left;
+      margin: 0 20px;
+      line-height: 83px;
+
+      a:not(.my-btn) {
+        font-family: proxima_novasemibold;
+        color: white;
+        text-transform: uppercase;
+
+        &:hover {
+          color: @orange-1;
+        }
+      }
+
+      .my-btn {
+        line-height: 40px;
+        height: 40px;
+        width: 168px;
+      }
+    }
+  }
+}
+
+#header {
+  height: 85px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+
+  .logo {
+    float: left;
+    margin-top: 15px;
+  }
+
+  #menu {
+    float: right;
+  }
+}
+
+/***************************
+****************************
+Slider Styles
+****************************
+***************************/
+
+.text-wrapper {
+  background: 
+  url("../images/bg-1.png") no-repeat 50% 0,
+  url("../images/bg-1.png") no-repeat 50% 100%;
+  text-align: center;
+  color: white;
+  padding: 40px 0;
+
+  > * {
+    margin: 0;
+  }
+
+  h1 {
+    font-family: 'proxima_nova_rgbold';
+    text-transform: uppercase;
+    font-size: 60px;
+
+    span {
+      font-style: italic;
+    }
+  }
+
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+  }
+
+  .play-btn {
+    position: absolute;
+    top: 230px;
+    left: 50%;
+    margin-left: -73px;
+  }
+}
+
+#slider {
+  position: relative;
+  z-index: 97;
+  background: url("../images/slider/1.jpg") no-repeat scroll center top / cover rgba(0, 0, 0, 0);
+
+  div:not(.text-wrapper) {
+    height: 100%;
+  }
+
+  .text-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-top: -200px;
+    left: 0;
+  }
+
+  .down-arrow {
+    position: absolute;
+    bottom: 27px;
+    left: 50%;
+    margin-left: -32px;
+  }
+}
