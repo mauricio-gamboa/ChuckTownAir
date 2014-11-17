@@ -669,4 +669,35 @@ Footer Styles
 
 #footer {
   background: url("../images/footer-bg.jpg") no-repeat scroll center top / cover rgba(0, 0, 0, 0);
+
+  div:not(.text-wrapper) {
+    height: 100%;
+  }
+
+  .text-wrapper {
+    background: url("../images/bg-1.png") no-repeat 50% 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -170px;
+    width: 100%;
+    left: 0;
+    padding-bottom: 0;
+    
+    h1 {
+      font-size: 50px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .btn-1 {
+      height: 54px;
+      line-height: 54px;
+      width: 233px;
+      font-size: 17px;
+    }
+  }
 }
