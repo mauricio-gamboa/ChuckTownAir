@@ -33,6 +33,33 @@
         }, 1200);
       }
     };
+  }])
+
+  .directive('owl', [function () {
+    return {
+      restrict: 'A',
+
+      link: function (scope, element, attrs, controller) {
+        element.owlCarousel({
+          pagination: false,
+          autoPlay: true
+        });
+      }
+    };
+  }])
+
+  .directive('owlClients', [function () {
+    return {
+      restrict: 'A',
+
+      link: function (scope, element, attrs, controller) {
+        element.owlCarousel({
+          pagination: false,
+          autoPlay: true,
+          items: 8
+        });
+      }
+    };
   }]);
 
 }());

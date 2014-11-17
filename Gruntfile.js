@@ -29,6 +29,7 @@ module.exports = function(grunt) {
       js: {
         src: [
         'bower_components/jquery/dist/jquery.js',
+        'bower_components/OwlCarousel/owl-carousel/owl.carousel.js',
         'bower_components/bootstrap/dist/js/bootstrap.js',
         'bower_components/angular/angular.js'
         ],
@@ -36,18 +37,15 @@ module.exports = function(grunt) {
       }
     },
 
-    // uglify: {
-    //   js: {
-    //     files: {
-    //       'public/js/libs.js': 'public/js/libs.js'
-    //     }
-    //   }
-    // },
-
     cssmin: {
       combine: {
         files: {
-          'public/styles/libs.css': ['bower_components/bootstrap/dist/css/bootstrap.css', 'bower_components/font-awesome/css/font-awesome.min.css']
+          'public/styles/libs.css': [
+          'bower_components/bootstrap/dist/css/bootstrap.css',
+          'bower_components/OwlCarousel/owl-carousel/owl.carousel.css',
+          'bower_components/OwlCarousel/owl-carousel/owl.theme.css',
+          'bower_components/font-awesome/css/font-awesome.min.css'
+          ]
         }
       }
     },
@@ -62,7 +60,6 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-less');
-  // grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
