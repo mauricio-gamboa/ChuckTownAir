@@ -15,7 +15,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <div class="clearfix">
             <h1 class="logo"><a href="">ChuckTownAir</a></h1>
-            <nav id="menu">
+            <nav id="menu" class="hide-s hide-xs">
               <ul class="list-unstyled clearfix">
                 <li><a href="">Reel</a></li>
                 <li><a href="">Services</a></li>
@@ -24,12 +24,30 @@
                 <li><a href="" class="my-btn btn-1">Project Inquiry</a></li>
               </ul>
             </nav>
+            <div class="small-header show-s show-xs pull-right">
+              <a href="" class="my-btn btn-1 hide-xs">Project Inquiry</a>
+              <span class="my-btn btn-3" data-toggle="collapse" data-target="#small-nav"><i class="fa fa-bars"></i></span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </header>
-  <section id="slider" full-height>
+  <nav id="small-nav" class="collapse">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <ul class="list-unstyled clearfix">
+            <li><a href="">Reel</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Equipment</a></li>
+            <li><a href="">4K Freebies</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section id="slider" full-height scroll change-menu>
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -60,22 +78,22 @@
           <ul class="list-unstyled clearfix" role="tablist">
             <li role="presentation" class="active">
               <a href="#service-1" aria-controls="service-1" role="tab" data-toggle="tab">
-                <span><i class="fa fa-youtube-play"></i> Aerial Video</span>
+                <span><i class="fa fa-youtube-play"></i> <span class="hide-s hide-xs">Aerial Video</span></span>
               </a>
             </li>
             <li role="presentation">
               <a href="#service-2" aria-controls="service-2" role="tab" data-toggle="tab">
-                <span class="two-lines"><i class="fa fa-scissors"></i> Editing &amp; <br>Production</span>
+                <span class="two-lines"><i class="fa fa-scissors"></i> <span class="hide-s hide-xs">Editing &amp; <br>Production</span></span>
               </a>
             </li>
             <li role="presentation">
               <a href="#service-3" aria-controls="service-3" role="tab" data-toggle="tab">
-                <span class="two-lines"><i class="fa fa-cubes"></i> Aerial Video <br>Platform Builds</span>
+                <span class="two-lines"><i class="fa fa-cubes"></i> <span class="hide-s hide-xs">Aerial Video <br>Platform Builds</span></span>
               </a>
             </li>
             <li role="presentation">
               <a href="#service-4" aria-controls="service-4" role="tab" data-toggle="tab">
-                <span><i class="fa fa-book"></i> Education</span>
+                <span><i class="fa fa-book"></i> <span class="hide-s hide-xs">Education</span></span>
               </a>
             </li>
           </ul>
@@ -93,8 +111,8 @@
                 <div class="info clearfix">
                   <img src="public/images/service-1.png" alt="">
                   <div class="text">
-                    <h3>Aerial Video</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor faucibus tellus, vitae blandit est pharetra quis. Nam sed dolor porttitor, volutpat nisl id, convallis elit. Mauris eleifend condimentum est ac bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vulputate velit in lacus iaculis dapibus. Maecenas quis congue nulla, eu ultricies nunc. Phasellus id enim sit amet est faucibus pretium vel vitae elit. Morbi ac dui vitae enim posuere vulputate. Duis eros quam, venenatis tempor porta vel, tempus et nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    <h3 class="hide-xs">Aerial Video</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor faucibus tellus, vitae blandit est pharetra quis. Nam sed dolor porttitor, volutpat nisl id, convallis elit. Mauris eleifend condimentum est ac bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vulputate velit in lacus iaculis dapibus. Maecenas quis congue nulla, eu ultricies nunc. Phasellus id enim sit amet est faucibus pretium vel vitae elit. Morbi ac dui vitae enim posuere vulputate.</p>
                   </div>
                 </div>
                 <div class="features general-padding">
@@ -121,8 +139,8 @@
                 <div class="info clearfix">
                   <img src="public/images/service-1.png" alt="">
                   <div class="text">
-                    <h3>editing &amp; Production</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor faucibus tellus, vitae blandit est pharetra quis. Nam sed dolor porttitor, volutpat nisl id, convallis elit. Mauris eleifend condimentum est ac bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vulputate velit in lacus iaculis dapibus. Maecenas quis congue nulla, eu ultricies nunc. Phasellus id enim sit amet est faucibus pretium vel vitae elit. Morbi ac dui vitae enim posuere vulputate. Duis eros quam, venenatis tempor porta vel, tempus et nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    <h3 class="hide-xs">editing &amp; Production</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor faucibus tellus, vitae blandit est pharetra quis. Nam sed dolor porttitor, volutpat nisl id, convallis elit. Mauris eleifend condimentum est ac bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vulputate velit in lacus iaculis dapibus. Maecenas quis congue nulla, eu ultricies nunc. Phasellus id enim sit amet est faucibus pretium vel vitae elit. Morbi ac dui vitae enim posuere vulputate.</p>
                   </div>
                 </div>
                 <div class="features general-padding">
@@ -149,8 +167,8 @@
                 <div class="info clearfix">
                   <img src="public/images/service-1.png" alt="">
                   <div class="text">
-                    <h3>Aerial Video Platform Builds</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor faucibus tellus, vitae blandit est pharetra quis. Nam sed dolor porttitor, volutpat nisl id, convallis elit. Mauris eleifend condimentum est ac bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vulputate velit in lacus iaculis dapibus. Maecenas quis congue nulla, eu ultricies nunc. Phasellus id enim sit amet est faucibus pretium vel vitae elit. Morbi ac dui vitae enim posuere vulputate. Duis eros quam, venenatis tempor porta vel, tempus et nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    <h3 class="hide-xs">Aerial Video Platform Builds</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor faucibus tellus, vitae blandit est pharetra quis. Nam sed dolor porttitor, volutpat nisl id, convallis elit. Mauris eleifend condimentum est ac bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vulputate velit in lacus iaculis dapibus. Maecenas quis congue nulla, eu ultricies nunc. Phasellus id enim sit amet est faucibus pretium vel vitae elit. Morbi ac dui vitae enim posuere vulputate.</p>
                   </div>
                 </div>
                 <div class="features general-padding">
@@ -177,8 +195,8 @@
                 <div class="info clearfix">
                   <img src="public/images/service-1.png" alt="">
                   <div class="text">
-                    <h3>Education</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor faucibus tellus, vitae blandit est pharetra quis. Nam sed dolor porttitor, volutpat nisl id, convallis elit. Mauris eleifend condimentum est ac bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vulputate velit in lacus iaculis dapibus. Maecenas quis congue nulla, eu ultricies nunc. Phasellus id enim sit amet est faucibus pretium vel vitae elit. Morbi ac dui vitae enim posuere vulputate. Duis eros quam, venenatis tempor porta vel, tempus et nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    <h3 class="hide-xs">Education</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor faucibus tellus, vitae blandit est pharetra quis. Nam sed dolor porttitor, volutpat nisl id, convallis elit. Mauris eleifend condimentum est ac bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vulputate velit in lacus iaculis dapibus. Maecenas quis congue nulla, eu ultricies nunc. Phasellus id enim sit amet est faucibus pretium vel vitae elit. Morbi ac dui vitae enim posuere vulputate.</p>
                   </div>
                 </div>
                 <div class="features general-padding">
@@ -211,13 +229,13 @@
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <h3>Our Clients</h3>
           <div class="owl-carousel" owl>
-            <div><img src="public/images/clients/1.png" alt=""></div>
-            <div><img src="public/images/clients/2.png" alt=""></div>
-            <div><img src="public/images/clients/3.png" alt=""></div>
-            <div><img src="public/images/clients/4.png" alt=""></div>
-            <div><img src="public/images/clients/5.png" alt=""></div>
-            <div><img src="public/images/clients/6.png" alt=""></div>
-            <div><img src="public/images/clients/7.png" alt=""></div>
+            <div class="client-item"><img src="public/images/clients/1.png" alt=""></div>
+            <div class="client-item"><img src="public/images/clients/2.png" alt=""></div>
+            <div class="client-item"><img src="public/images/clients/3.png" alt=""></div>
+            <div class="client-item"><img src="public/images/clients/4.png" alt=""></div>
+            <div class="client-item"><img src="public/images/clients/5.png" alt=""></div>
+            <div class="client-item"><img src="public/images/clients/6.png" alt=""></div>
+            <div class="client-item"><img src="public/images/clients/7.png" alt=""></div>
           </div>
         </div>
       </div>
@@ -365,10 +383,10 @@
             <p>Nunc ultrices vel ipsum eget vestibulum</p>
             <a href="" class="my-btn btn-1">Get a Free Quote</a>
           </div>
-<!--           <div class="bottom">
+          <div class="bottom">
             <h1 class="logo"><a href="">ChuckTownAir</a></h1>
             <p>&copy;2014. ChuckTownAir. All Rights Reserved.</p>
-          </div> -->
+          </div>
         </div>
       </div>
     </div>
