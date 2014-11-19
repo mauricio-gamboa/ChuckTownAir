@@ -212,6 +212,32 @@
         });
       }
     };
+  }])
+
+  .directive('owlEquipmentGallery', [function () {
+    return {
+      restrict: 'A',
+
+      link: function (scope, element, attrs, controller) {
+        element.owlCarousel({
+          autoPlay: true,
+          items: 4
+        });
+      }
+    };
+  }])
+
+  .directive('owlFreebies', [function () {
+    return {
+      restrict: 'A',
+
+      link: function (scope, element, attrs, controller) {
+        element.owlCarousel({
+          autoPlay: true,
+          singleItem: true
+        });
+      }
+    };
   }]);
 
 }());
