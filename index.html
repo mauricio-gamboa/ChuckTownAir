@@ -17,15 +17,15 @@
             <h1 class="logo"><a href="">ChuckTownAir</a></h1>
             <nav id="menu" class="hide-s hide-xs">
               <ul class="list-unstyled clearfix">
-                <li><a href="">Reel</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Equipment</a></li>
-                <li><a href="">4K Freebies</a></li>
-                <li><a href="" class="my-btn btn-1">Project Inquiry</a></li>
+                <li><a href="#slider" du-smooth-scroll du-scrollspy>Reel</a></li>
+                <li><a href="#services" offset="85" du-smooth-scroll du-scrollspy>Services</a></li>
+                <li><a href="#equipment-wrapper" offset="85" du-smooth-scroll du-scrollspy>Equipment</a></li>
+                <li><a href="#freebies-wrapper" offset="85" du-smooth-scroll du-scrollspy>4K Freebies</a></li>
+                <li><a href="https://docs.google.com/forms/d/1IeWwgnjSa8XVuYrzhY-c9hoJEruXy-2thrR_jtG3gbg/viewform" target="_blank" class="my-btn btn-1">Project Inquiry</a></li>
               </ul>
             </nav>
             <div class="small-header show-s show-xs pull-right">
-              <a href="" class="my-btn btn-1 hide-xs">Project Inquiry</a>
+              <a href="https://docs.google.com/forms/d/1IeWwgnjSa8XVuYrzhY-c9hoJEruXy-2thrR_jtG3gbg/viewform" target="_blank" class="my-btn btn-1 hide-xs">Project Inquiry</a>
               <span class="my-btn btn-3 collapsed" data-toggle="collapse" data-target="#small-nav"><i class="fa fa-bars"></i></span>
             </div>
           </div>
@@ -38,190 +38,199 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <ul class="list-unstyled clearfix">
-            <li><a href="">Reel</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Equipment</a></li>
-            <li><a href="">4K Freebies</a></li>
+            <li><a href="#slider" du-smooth-scroll du-scrollspy>Reel</a></li>
+            <li><a href="#services" offset="85" du-smooth-scroll du-scrollspy>Services</a></li>
+            <li><a href="#equipment-wrapper" offset="85" du-smooth-scroll du-scrollspy>Equipment</a></li>
+            <li><a href="#freebies-wrapper" offset="85" du-smooth-scroll du-scrollspy>4K Freebies</a></li>
           </ul>
         </div>
       </div>
     </div>
   </nav>
-  <section id="slider" full-height scroll change-menu>
+  <section id="slider" full-height change-menu>
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <div class="text-wrapper">
             <h1>we are <span>motion</span></h1>
             <p>Cras et aliquet lorem aenean non semper magna</p>
-            <a href="" class="play-btn">Play Video</a>
+            <span class="play-btn" data-toggle="modal" data-target="#video-modal">Play Video</span>
           </div>
-          <a href="" class="animated down-arrow" bounce><i class="fa fa-chevron-down"></i></a>
+          <a href="#services" offset="85" du-smooth-scroll class="animated down-arrow" bounce><i class="fa fa-chevron-down"></i></a>
         </div>
       </div>
     </div>
   </section>
-  <section class="my-title">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h2><span>our</span></h2>
-          <h1>Services</h1>
-        </div>
+  <div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-hidden="true" stop-video>
+    <div class="modal-dialog modal-lg">
+      <div class="videoWrapper">
+        <iframe id="playerid" width="420" height="315" src="//www.youtube.com/embed/wZZ7oFKsKzY?html5=1" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
-  </section>
-  <section id="services-tabs">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <ul class="list-unstyled clearfix" role="tablist">
-            <li role="presentation" class="active">
-              <a href="#service-1" aria-controls="service-1" role="tab" data-toggle="tab">
-                <span><i class="fa fa-youtube-play"></i> <span class="hide-s hide-xs">Aerial Video</span></span>
-              </a>
-            </li>
-            <li role="presentation">
-              <a href="#service-2" aria-controls="service-2" role="tab" data-toggle="tab">
-                <span class="two-lines"><i class="fa fa-scissors"></i> <span class="hide-s hide-xs">Editing &amp; <br>Production</span></span>
-              </a>
-            </li>
-            <li role="presentation">
-              <a href="#service-3" aria-controls="service-3" role="tab" data-toggle="tab">
-                <span class="two-lines"><i class="fa fa-cubes"></i> <span class="hide-s hide-xs">Aerial Video <br>Platform Builds</span></span>
-              </a>
-            </li>
-            <li role="presentation">
-              <a href="#service-4" aria-controls="service-4" role="tab" data-toggle="tab">
-                <span><i class="fa fa-book"></i> <span class="hide-s hide-xs">Education</span></span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="services-tabs-content">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="service-1">
-              <div class="tab-layout tab-layout-1">
-                <div class="info clearfix">
-                  <img src="public/images/service-1.png" alt="">
-                  <div class="text">
-                    <h3 class="hide-xs">Aerial Video</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor faucibus tellus, vitae blandit est pharetra quis. Nam sed dolor porttitor, volutpat nisl id, convallis elit. Mauris eleifend condimentum est ac bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vulputate velit in lacus iaculis dapibus. Maecenas quis congue nulla, eu ultricies nunc. Phasellus id enim sit amet est faucibus pretium vel vitae elit. Morbi ac dui vitae enim posuere vulputate.</p>
-                  </div>
-                </div>
-                <div class="features general-padding">
-                  <h3>Aerial Video</h3>
-                  <ul class="list-unstyled clearfix">
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div role="tabpanel" class="tab-pane" id="service-2">
-              <div class="tab-layout tab-layout-2">
-                <div class="info clearfix">
-                  <img src="public/images/service-1.png" alt="">
-                  <div class="text">
-                    <h3 class="hide-xs">editing &amp; Production</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor faucibus tellus, vitae blandit est pharetra quis. Nam sed dolor porttitor, volutpat nisl id, convallis elit. Mauris eleifend condimentum est ac bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vulputate velit in lacus iaculis dapibus. Maecenas quis congue nulla, eu ultricies nunc. Phasellus id enim sit amet est faucibus pretium vel vitae elit. Morbi ac dui vitae enim posuere vulputate.</p>
-                  </div>
-                </div>
-                <div class="features general-padding">
-                  <h3>editing &amp; Production</h3>
-                  <ul class="list-unstyled clearfix">
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div role="tabpanel" class="tab-pane" id="service-3">
-              <div class="tab-layout tab-layout-1">
-                <div class="info clearfix">
-                  <img src="public/images/service-1.png" alt="">
-                  <div class="text">
-                    <h3 class="hide-xs">Aerial Video Platform Builds</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor faucibus tellus, vitae blandit est pharetra quis. Nam sed dolor porttitor, volutpat nisl id, convallis elit. Mauris eleifend condimentum est ac bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vulputate velit in lacus iaculis dapibus. Maecenas quis congue nulla, eu ultricies nunc. Phasellus id enim sit amet est faucibus pretium vel vitae elit. Morbi ac dui vitae enim posuere vulputate.</p>
-                  </div>
-                </div>
-                <div class="features general-padding">
-                  <h3>Aerial Video Platform Builds</h3>
-                  <ul class="list-unstyled clearfix">
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div role="tabpanel" class="tab-pane" id="service-4">
-              <div class="tab-layout tab-layout-2">
-                <div class="info clearfix">
-                  <img src="public/images/service-1.png" alt="">
-                  <div class="text">
-                    <h3 class="hide-xs">Education</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor faucibus tellus, vitae blandit est pharetra quis. Nam sed dolor porttitor, volutpat nisl id, convallis elit. Mauris eleifend condimentum est ac bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vulputate velit in lacus iaculis dapibus. Maecenas quis congue nulla, eu ultricies nunc. Phasellus id enim sit amet est faucibus pretium vel vitae elit. Morbi ac dui vitae enim posuere vulputate.</p>
-                  </div>
-                </div>
-                <div class="features general-padding">
-                  <h3>Education</h3>
-                  <ul class="list-unstyled clearfix">
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+  </div>
+  <section id="services">
+    <section class="my-title">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h2><span>our</span></h2>
+            <h1>Services</h1>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <section id="services-tabs">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <ul class="list-unstyled clearfix" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#service-1" aria-controls="service-1" role="tab" data-toggle="tab">
+                  <span><i class="fa fa-youtube-play"></i> <span class="hide-s hide-xs">Aerial Video</span></span>
+                </a>
+              </li>
+              <li role="presentation">
+                <a href="#service-2" aria-controls="service-2" role="tab" data-toggle="tab">
+                  <span class="two-lines"><i class="fa fa-scissors"></i> <span class="hide-s hide-xs">Editing &amp; <br>Production</span></span>
+                </a>
+              </li>
+              <li role="presentation">
+                <a href="#service-3" aria-controls="service-3" role="tab" data-toggle="tab">
+                  <span class="two-lines"><i class="fa fa-cubes"></i> <span class="hide-s hide-xs">Aerial Video <br>Platform Builds</span></span>
+                </a>
+              </li>
+              <li role="presentation">
+                <a href="#service-4" aria-controls="service-4" role="tab" data-toggle="tab">
+                  <span><i class="fa fa-book"></i> <span class="hide-s hide-xs">Education</span></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services-tabs-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="service-1">
+                <div class="tab-layout tab-layout-1">
+                  <div class="info clearfix">
+                    <img src="public/images/service-1.png" alt="">
+                    <div class="text">
+                      <h3 class="hide-xs">Aerial Video</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor faucibus tellus, vitae blandit est pharetra quis. Nam sed dolor porttitor, volutpat nisl id, convallis elit. Mauris eleifend condimentum est ac bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vulputate velit in lacus iaculis dapibus. Maecenas quis congue nulla, eu ultricies nunc. Phasellus id enim sit amet est faucibus pretium vel vitae elit. Morbi ac dui vitae enim posuere vulputate.</p>
+                    </div>
+                  </div>
+                  <div class="features general-padding">
+                    <h3>Aerial Video</h3>
+                    <ul class="list-unstyled clearfix">
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="service-2">
+                <div class="tab-layout tab-layout-2">
+                  <div class="info clearfix">
+                    <img src="public/images/service-1.png" alt="">
+                    <div class="text">
+                      <h3 class="hide-xs">editing &amp; Production</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor faucibus tellus, vitae blandit est pharetra quis. Nam sed dolor porttitor, volutpat nisl id, convallis elit. Mauris eleifend condimentum est ac bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vulputate velit in lacus iaculis dapibus. Maecenas quis congue nulla, eu ultricies nunc. Phasellus id enim sit amet est faucibus pretium vel vitae elit. Morbi ac dui vitae enim posuere vulputate.</p>
+                    </div>
+                  </div>
+                  <div class="features general-padding">
+                    <h3>editing &amp; Production</h3>
+                    <ul class="list-unstyled clearfix">
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="service-3">
+                <div class="tab-layout tab-layout-1">
+                  <div class="info clearfix">
+                    <img src="public/images/service-1.png" alt="">
+                    <div class="text">
+                      <h3 class="hide-xs">Aerial Video Platform Builds</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor faucibus tellus, vitae blandit est pharetra quis. Nam sed dolor porttitor, volutpat nisl id, convallis elit. Mauris eleifend condimentum est ac bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vulputate velit in lacus iaculis dapibus. Maecenas quis congue nulla, eu ultricies nunc. Phasellus id enim sit amet est faucibus pretium vel vitae elit. Morbi ac dui vitae enim posuere vulputate.</p>
+                    </div>
+                  </div>
+                  <div class="features general-padding">
+                    <h3>Aerial Video Platform Builds</h3>
+                    <ul class="list-unstyled clearfix">
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="service-4">
+                <div class="tab-layout tab-layout-2">
+                  <div class="info clearfix">
+                    <img src="public/images/service-1.png" alt="">
+                    <div class="text">
+                      <h3 class="hide-xs">Education</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor faucibus tellus, vitae blandit est pharetra quis. Nam sed dolor porttitor, volutpat nisl id, convallis elit. Mauris eleifend condimentum est ac bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vulputate velit in lacus iaculis dapibus. Maecenas quis congue nulla, eu ultricies nunc. Phasellus id enim sit amet est faucibus pretium vel vitae elit. Morbi ac dui vitae enim posuere vulputate.</p>
+                    </div>
+                  </div>
+                  <div class="features general-padding">
+                    <h3>Education</h3>
+                    <ul class="list-unstyled clearfix">
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </section>
   <section id="clients" class="general-padding">
     <div class="container">
@@ -261,186 +270,460 @@
       <div class="item"><img src="public/images/clients/image-1.png" alt=""></div>
     </div>
   </section>
-  <section id="equipment">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <section class="my-title">
-            <h2><span>the</span></h2>
-            <h1>Equipment</h1>
+  <div id="equipment-wrapper" class="clearfix">
+    <section class="my-title">
+      <h2><span>the</span></h2>
+      <h1>Equipment</h1>
+    </section>
+    <div id="equipment-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+      <div class="carousel-inner" role="listbox">
+        <div class="item active equipment-item">
+          <section class="my-equipment">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <div class="equipment-carousel">
+                    <div class="layout clearfix">
+                      <div class="image-wrapper">
+                        <img src="public/images/equipment/1.png" alt="">
+                      </div>
+                      <div class="text">
+                        <h3>DJI Ronin</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor faucibus tellus, vitae blandit est pharetra quis. Nam sed dolor porttitor, volutpat nisl id, convallis elit. Mauris eleifend condimentum est ac bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vulputate velit in lacus iaculis dapibus. Maecenas quis congue nulla, eu ultricies nunc.</p>
+                        <ul class="list-unstyled">
+                          <li>Lorem ipsum dolor sit amet</li>
+                          <li>Lorem ipsum dolor sit amet</li>
+                          <li>Lorem ipsum dolor sit amet</li>
+                          <li>Lorem ipsum dolor sit amet</li>
+                          <li>Lorem ipsum dolor sit amet</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
-          <div class="equipment-carousel">
-            <div class="layout clearfix">
-              <div class="image-wrapper">
-                <img src="public/images/equipment/1.png" alt="">
+          <section class="my-equipment-gallery general-padding">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <h3>DJI Ronin gallery</h3>
+                  <div class="equipment-gallery-carousel owl-carousel" owl-equipment-gallery>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-1.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-2.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-3.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-4.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-1.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-2.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-3.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-4.png" alt="">
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="text">
-                <h3>DJI Ronin</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor faucibus tellus, vitae blandit est pharetra quis. Nam sed dolor porttitor, volutpat nisl id, convallis elit. Mauris eleifend condimentum est ac bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vulputate velit in lacus iaculis dapibus. Maecenas quis congue nulla, eu ultricies nunc.</p>
-                <ul class="list-unstyled">
-                  <li>Lorem ipsum dolor sit amet</li>
-                  <li>Lorem ipsum dolor sit amet</li>
-                  <li>Lorem ipsum dolor sit amet</li>
-                  <li>Lorem ipsum dolor sit amet</li>
-                  <li>Lorem ipsum dolor sit amet</li>
-                </ul>
+            </div>
+          </section>
+        </div>
+        <div class="item equipment-item">
+          <section class="my-equipment">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <div class="equipment-carousel">
+                    <div class="layout clearfix">
+                      <div class="image-wrapper">
+                        <img src="public/images/equipment/2.png" alt="">
+                      </div>
+                      <div class="text">
+                        <h3>DJI Z15(GH4) Gimbal</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor faucibus tellus, vitae blandit est pharetra quis. Nam sed dolor porttitor, volutpat nisl id, convallis elit. Mauris eleifend condimentum est ac bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vulputate velit in lacus iaculis dapibus. Maecenas quis congue nulla, eu ultricies nunc.</p>
+                        <ul class="list-unstyled">
+                          <li>Lorem ipsum dolor sit amet</li>
+                          <li>Lorem ipsum dolor sit amet</li>
+                          <li>Lorem ipsum dolor sit amet</li>
+                          <li>Lorem ipsum dolor sit amet</li>
+                          <li>Lorem ipsum dolor sit amet</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="my-equipment-gallery general-padding">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <h3>DJI Z15(GH4) Gimbal</h3>
+                  <div class="equipment-gallery-carousel owl-carousel" owl-equipment-gallery>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-1.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-2.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-3.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-4.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-1.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-2.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-3.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-4.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="item equipment-item">
+          <section class="my-equipment">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <div class="equipment-carousel">
+                    <div class="layout clearfix">
+                      <div class="image-wrapper padded">
+                        <img src="public/images/equipment/3.png" alt="">
+                      </div>
+                      <div class="text">
+                        <h3>DJI s1000</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor faucibus tellus, vitae blandit est pharetra quis. Nam sed dolor porttitor, volutpat nisl id, convallis elit. Mauris eleifend condimentum est ac bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vulputate velit in lacus iaculis dapibus. Maecenas quis congue nulla, eu ultricies nunc.</p>
+                        <ul class="list-unstyled">
+                          <li>Lorem ipsum dolor sit amet</li>
+                          <li>Lorem ipsum dolor sit amet</li>
+                          <li>Lorem ipsum dolor sit amet</li>
+                          <li>Lorem ipsum dolor sit amet</li>
+                          <li>Lorem ipsum dolor sit amet</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="my-equipment-gallery general-padding">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <h3>DJI s1000</h3>
+                  <div class="equipment-gallery-carousel owl-carousel" owl-equipment-gallery>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-1.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-2.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-3.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-4.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-1.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-2.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-3.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-4.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="item equipment-item">
+          <section class="my-equipment">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <div class="equipment-carousel">
+                    <div class="layout clearfix">
+                      <div class="image-wrapper padded">
+                        <img src="public/images/equipment/4.png" alt="">
+                      </div>
+                      <div class="text">
+                        <h3>DJI Lightbridge</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor faucibus tellus, vitae blandit est pharetra quis. Nam sed dolor porttitor, volutpat nisl id, convallis elit. Mauris eleifend condimentum est ac bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vulputate velit in lacus iaculis dapibus. Maecenas quis congue nulla, eu ultricies nunc.</p>
+                        <ul class="list-unstyled">
+                          <li>Lorem ipsum dolor sit amet</li>
+                          <li>Lorem ipsum dolor sit amet</li>
+                          <li>Lorem ipsum dolor sit amet</li>
+                          <li>Lorem ipsum dolor sit amet</li>
+                          <li>Lorem ipsum dolor sit amet</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="my-equipment-gallery general-padding">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <h3>DJI Lightbridge</h3>
+                  <div class="equipment-gallery-carousel owl-carousel" owl-equipment-gallery>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-1.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-2.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-3.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-4.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-1.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-2.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-3.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-4.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="item equipment-item">
+          <section class="my-equipment">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <div class="equipment-carousel">
+                    <div class="layout clearfix">
+                      <div class="image-wrapper">
+                        <img src="public/images/equipment/5.png" alt="">
+                      </div>
+                      <div class="text">
+                        <h3>Trex 800 Trekker Photoship</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor faucibus tellus, vitae blandit est pharetra quis. Nam sed dolor porttitor, volutpat nisl id, convallis elit. Mauris eleifend condimentum est ac bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vulputate velit in lacus iaculis dapibus. Maecenas quis congue nulla, eu ultricies nunc.</p>
+                        <ul class="list-unstyled">
+                          <li>Lorem ipsum dolor sit amet</li>
+                          <li>Lorem ipsum dolor sit amet</li>
+                          <li>Lorem ipsum dolor sit amet</li>
+                          <li>Lorem ipsum dolor sit amet</li>
+                          <li>Lorem ipsum dolor sit amet</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="my-equipment-gallery general-padding">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <h3>Trex 800 Trekker Photoship</h3>
+                  <div class="equipment-gallery-carousel owl-carousel" owl-equipment-gallery>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-1.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-2.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-3.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-4.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-1.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-2.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-3.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="public/images/equipment/gallery/1-4.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <a class="directions prev" href="#equipment-carousel" role="button" data-slide="prev">
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="directions next" href="#equipment-carousel" role="button" data-slide="next">
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <section id="freebies-wrapper">
+    <section class="my-title">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h2><span>some</span></h2>
+            <h1>4K Freebies</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="freebies">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <ul class="freebies-gallery list-unstyled clearfix hide-xs">
+              <li class="item">
+                <div class="video-wrapper">
+                  <img src="public/images/video-2.png" alt="">
+                </div>
+                <h3>Charleston aerials</h3>
+                <a href="" class="my-btn btn-2">Download</a>
+              </li>
+              <li class="item">
+                <div class="video-wrapper">
+                  <img src="public/images/video-2.png" alt="">
+                </div>
+                <h3>Charleston aerials</h3>
+                <a href="" class="my-btn btn-2">Download</a>
+              </li>
+              <li class="item">
+                <div class="video-wrapper">
+                  <img src="public/images/video-2.png" alt="">
+                </div>
+                <h3>Charleston aerials</h3>
+                <a href="" class="my-btn btn-2">Download</a>
+              </li>
+              <li class="item">
+                <div class="video-wrapper">
+                  <img src="public/images/video-2.png" alt="">
+                </div>
+                <h3>Charleston aerials</h3>
+                <a href="" class="my-btn btn-2">Download</a>
+              </li>
+              <li class="item">
+                <div class="video-wrapper">
+                  <img src="public/images/video-2.png" alt="">
+                </div>
+                <h3>Charleston aerials</h3>
+                <a href="" class="my-btn btn-2">Download</a>
+              </li>
+              <li class="item">
+                <div class="video-wrapper">
+                  <img src="public/images/video-2.png" alt="">
+                </div>
+                <h3>Charleston aerials</h3>
+                <a href="" class="my-btn btn-2">Download</a>
+              </li>
+              <li class="item">
+                <div class="video-wrapper">
+                  <img src="public/images/video-2.png" alt="">
+                </div>
+                <h3>Charleston aerials</h3>
+                <a href="" class="my-btn btn-2">Download</a>
+              </li>
+              <li class="item">
+                <div class="video-wrapper">
+                  <img src="public/images/video-2.png" alt="">
+                </div>
+                <h3>Charleston aerials</h3>
+                <a href="" class="my-btn btn-2">Download</a>
+              </li>
+              <li class="item">
+                <div class="video-wrapper">
+                  <img src="public/images/video-2.png" alt="">
+                </div>
+                <h3>Charleston aerials</h3>
+                <a href="" class="my-btn btn-2">Download</a>
+              </li>
+            </ul>
+            <div class="show-xs">
+              <div class="freebies-gallery mobile owl-carousel" owl-freebies>
+                <div class="item">
+                  <div class="video-wrapper">
+                    <img src="public/images/video-2.png" alt="">
+                  </div>
+                  <h3>Charleston aerials</h3>
+                  <a href="" class="my-btn btn-2">Download</a>
+                </div>
+                <div class="item">
+                  <div class="video-wrapper">
+                    <img src="public/images/video-2.png" alt="">
+                  </div>
+                  <h3>Charleston aerials</h3>
+                  <a href="" class="my-btn btn-2">Download</a>
+                </div>
+                <div class="item">
+                  <div class="video-wrapper">
+                    <img src="public/images/video-2.png" alt="">
+                  </div>
+                  <h3>Charleston aerials</h3>
+                  <a href="" class="my-btn btn-2">Download</a>
+                </div>
+                <div class="item">
+                  <div class="video-wrapper">
+                    <img src="public/images/video-2.png" alt="">
+                  </div>
+                  <h3>Charleston aerials</h3>
+                  <a href="" class="my-btn btn-2">Download</a>
+                </div>
+                <div class="item">
+                  <div class="video-wrapper">
+                    <img src="public/images/video-2.png" alt="">
+                  </div>
+                  <h3>Charleston aerials</h3>
+                  <a href="" class="my-btn btn-2">Download</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section id="equipment-gallery" class="general-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h3>DJI Ronin gallery</h3>
-          <div class="equipment-gallery-carousel owl-carousel" owl-equipment-gallery>
-            <div class="item">
-              <img src="public/images/equipment/gallery/1.png" alt="">
-            </div>
-            <div class="item">
-              <img src="public/images/equipment/gallery/1.png" alt="">
-            </div>
-            <div class="item">
-              <img src="public/images/equipment/gallery/1.png" alt="">
-            </div>
-            <div class="item">
-              <img src="public/images/equipment/gallery/1.png" alt="">
-            </div>
-            <div class="item">
-              <img src="public/images/equipment/gallery/1.png" alt="">
-            </div>
-            <div class="item">
-              <img src="public/images/equipment/gallery/1.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="my-title">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h2><span>some</span></h2>
-          <h1>4K Freebies</h1>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="freebies">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <ul class="freebies-gallery list-unstyled clearfix hide-xs">
-            <li class="item">
-              <div class="video-wrapper">
-                <img src="public/images/video-2.png" alt="">
-              </div>
-              <h3>Charleston aerials</h3>
-              <a href="" class="my-btn btn-2">Download</a>
-            </li>
-            <li class="item">
-              <div class="video-wrapper">
-                <img src="public/images/video-2.png" alt="">
-              </div>
-              <h3>Charleston aerials</h3>
-              <a href="" class="my-btn btn-2">Download</a>
-            </li>
-            <li class="item">
-              <div class="video-wrapper">
-                <img src="public/images/video-2.png" alt="">
-              </div>
-              <h3>Charleston aerials</h3>
-              <a href="" class="my-btn btn-2">Download</a>
-            </li>
-            <li class="item">
-              <div class="video-wrapper">
-                <img src="public/images/video-2.png" alt="">
-              </div>
-              <h3>Charleston aerials</h3>
-              <a href="" class="my-btn btn-2">Download</a>
-            </li>
-            <li class="item">
-              <div class="video-wrapper">
-                <img src="public/images/video-2.png" alt="">
-              </div>
-              <h3>Charleston aerials</h3>
-              <a href="" class="my-btn btn-2">Download</a>
-            </li>
-            <li class="item">
-              <div class="video-wrapper">
-                <img src="public/images/video-2.png" alt="">
-              </div>
-              <h3>Charleston aerials</h3>
-              <a href="" class="my-btn btn-2">Download</a>
-            </li>
-            <li class="item">
-              <div class="video-wrapper">
-                <img src="public/images/video-2.png" alt="">
-              </div>
-              <h3>Charleston aerials</h3>
-              <a href="" class="my-btn btn-2">Download</a>
-            </li>
-            <li class="item">
-              <div class="video-wrapper">
-                <img src="public/images/video-2.png" alt="">
-              </div>
-              <h3>Charleston aerials</h3>
-              <a href="" class="my-btn btn-2">Download</a>
-            </li>
-            <li class="item">
-              <div class="video-wrapper">
-                <img src="public/images/video-2.png" alt="">
-              </div>
-              <h3>Charleston aerials</h3>
-              <a href="" class="my-btn btn-2">Download</a>
-            </li>
-          </ul>
-          <div class="show-xs">
-            <div class="freebies-gallery mobile owl-carousel" owl-freebies>
-              <div class="item">
-                <div class="video-wrapper">
-                  <img src="public/images/video-2.png" alt="">
-                </div>
-                <h3>Charleston aerials</h3>
-                <a href="" class="my-btn btn-2">Download</a>
-              </div>
-              <div class="item">
-                <div class="video-wrapper">
-                  <img src="public/images/video-2.png" alt="">
-                </div>
-                <h3>Charleston aerials</h3>
-                <a href="" class="my-btn btn-2">Download</a>
-              </div>
-              <div class="item">
-                <div class="video-wrapper">
-                  <img src="public/images/video-2.png" alt="">
-                </div>
-                <h3>Charleston aerials</h3>
-                <a href="" class="my-btn btn-2">Download</a>
-              </div>
-              <div class="item">
-                <div class="video-wrapper">
-                  <img src="public/images/video-2.png" alt="">
-                </div>
-                <h3>Charleston aerials</h3>
-                <a href="" class="my-btn btn-2">Download</a>
-              </div>
-              <div class="item">
-                <div class="video-wrapper">
-                  <img src="public/images/video-2.png" alt="">
-                </div>
-                <h3>Charleston aerials</h3>
-                <a href="" class="my-btn btn-2">Download</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
   </section>
   <section id="learn" class="general-padding">
     <div class="container">
