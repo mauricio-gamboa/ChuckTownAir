@@ -52,6 +52,14 @@ module.exports = function(grunt) {
       }
     },
 
+    uglify: {
+      js: {
+        files: {
+          'public/js/libs.js': 'public/js/libs.js'
+        }
+      }
+    },
+
     watch: {
       styles: {
         files: ['public/less/*.less'],
@@ -64,6 +72,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
-  grunt.registerTask('default', ['concat', 'cssmin', 'watch']);
+  grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'watch']);
 };
