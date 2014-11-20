@@ -493,6 +493,7 @@ Header Styles
         color: white;
         text-transform: uppercase;
         display: block;
+        padding: 0 30px;
 
         -webkit-transition-property: color;
         -o-transition-property: color;
@@ -512,6 +513,20 @@ Header Styles
 
         &:hover {
           color: @orange-1;
+        }
+      }
+
+      &.small-inquiry {
+        margin: 0 -15px;
+        
+        a {
+          padding: 0 45px;
+          background-color: white;
+          color: @orange-1;
+
+          &:hover {
+            color: @orange-2;
+          }
         }
       }
     }
