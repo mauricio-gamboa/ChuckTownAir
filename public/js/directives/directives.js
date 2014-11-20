@@ -120,10 +120,12 @@
       restrict: 'A',
 
       link: function (scope, element, attrs, controller) {
+        var iframe = element.find('iframe');
+        var src = iframe.attr('src');
+        
         element.on('hide.bs.modal', function (e) {
-          var video = $("#playerid").attr("src");
-          $("#playerid").attr("src","");
-          $("#playerid").attr("src", video);
+          iframe.attr("src", "");
+          iframe.attr("src", src);
         });
       }
     };
