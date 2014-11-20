@@ -246,6 +246,7 @@ a, input {
   width: 146px;
   display: block;
   text-indent: -9999px;
+  cursor: pointer;
 }
 
 .border {
@@ -945,15 +946,22 @@ Freebies Styles
     .video-wrapper {
       height: 202px;
       background-color: @gray-1;
-      position: relative;
       margin-bottom: 20px;
+      
+      span {
+        height: 100%;
+        width: 100%;
+        display: block;
+        position: relative;
+        cursor: pointer;
 
-      > img {
-        position: absolute;
-        top: 50%;
-        margin-top: -31px;
-        left: 50%;
-        margin-left: -31px;
+        > img {
+          position: absolute;
+          top: 50%;
+          margin-top: -31px;
+          left: 50%;
+          margin-left: -31px;
+        }
       }
     }
 
